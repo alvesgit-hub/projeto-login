@@ -5,3 +5,71 @@ Patela de Cores
 verde:#49a09d
 lilás: #5f2c82
 */
+
+
+/*
+    Versão Mobile
+    */
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*
+    A borda faça parte da conta de largura
+    */
+}
+
+body,html{
+background-color: #5f2c82 ;
+height: 100vh;
+width: 100vw;
+}
+
+main{
+    position: relative; /*centralizando main*/
+    height: 100vh;  /*Deixando main em tela cheia*/
+    width: 100vw;   /*Deixando main em tela cheia*/
+
+}
+
+section#login{
+    position: absolute; /*centralizando section*/
+    top: 50%; /*centralizando section*/
+    left: 50%;/*centralizando section*/
+    transform: translate(-50%, -50%); /*sempre no meio da tela*/
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden; /*tudo que tiver fora da borda vai ficar escondido*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width .3s, height .3s;  /*duração da transição*/
+    transition-timing-function: ease;   /*transição suave*/
+
+}
+
+section#login >div#imagem{
+    background-image: url(../imagens/pexels-vinícius-estevão-2896034\ \(1\).jpg);
+    height: 200px;
+    background-size: cover; /*aparece a imagem certinha ou content*/
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: block; /*aparece a imagem como bloco padrão*/
+}
+
+section#login > div#formulário{
+    padding: 10px;
+    display: block; /*aparece a imagem como bloco padrão*/
+
+}
+
+div#formulário > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulário > p {
+    font-size: 0.8em;
+}
